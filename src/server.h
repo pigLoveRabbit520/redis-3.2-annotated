@@ -1064,7 +1064,7 @@ typedef struct {
  * Extern declarations
  *----------------------------------------------------------------------------*/
 
-extern struct redisServer server;
+extern struct redisServer server; // 全局变量
 extern struct sharedObjectsStruct shared;
 extern dictType setDictType;
 extern dictType zsetDictType;
