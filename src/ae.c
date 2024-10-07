@@ -30,6 +30,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+// ae: Async Event 异步事件处理
 #include <stdio.h>
 #include <sys/time.h>
 #include <sys/types.h>
