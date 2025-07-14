@@ -1318,6 +1318,7 @@ void processInputBuffer(client *c) {
     server.current_client = NULL;
 }
 
+// readQueryFromClient函数负责读取socket数据，并将其追加到querybuf。
 void readQueryFromClient(aeEventLoop *el, int fd, void *privdata, int mask) {
     client *c = (client*) privdata;
     int nread, readlen;
