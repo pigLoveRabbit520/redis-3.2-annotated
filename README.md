@@ -7,6 +7,15 @@ server.h中的server变量
 extern struct redisServer server;
 ```
 
+# sds
+```
+struct sdshdr {
+    int len;       // 当前字符串的长度
+    int free;      // 剩余可用空间
+    char buf[];    // 实际存储字符串内容的缓冲区
+};
+```
+
 ## 获取socket数据
 `void readQueryFromClient(aeEventLoop *el, int fd, void *privdata, int mask)`  
 `readQueryFromClient`函数负责读取socket数据，并将其追加到querybuf。  
